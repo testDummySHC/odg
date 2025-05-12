@@ -21,18 +21,52 @@ function closeModal() {
     }, 300); // Match this with CSS transition duration
 }
 
+// Health Record Modal functionality
+function openHealthRecordModal() {
+    const modal = document.getElementById('healthRecordModal');
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+    
+    setTimeout(() => {
+        modal.classList.add('show');
+    }, 10);
+}
+
+function closeHealthRecordModal() {
+    const modal = document.getElementById('healthRecordModal');
+    modal.classList.remove('show');
+    
+    setTimeout(() => {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }, 300);
+}
+
 // Close modal when clicking outside of it
 window.onclick = function(event) {
-    const modal = document.getElementById('formModal');
-    if (event.target == modal) {
+    const formModal = document.getElementById('formModal');
+    const healthRecordModal = document.getElementById('healthRecordModal');
+    
+    if (event.target == formModal) {
         closeModal();
+    }
+    if (event.target == healthRecordModal) {
+        closeHealthRecordModal();
     }
 }
 
 // Close modal when pressing Escape key
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
-        closeModal();
+        const formModal = document.getElementById('formModal');
+        const healthRecordModal = document.getElementById('healthRecordModal');
+        
+        if (formModal.style.display === 'block') {
+            closeModal();
+        }
+        if (healthRecordModal.style.display === 'block') {
+            closeHealthRecordModal();
+        }
     }
 });
 
