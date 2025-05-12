@@ -26,9 +26,10 @@
             <div class="carousel-image" style="background-image: url('images/shc_new4.jpg');"></div>
         </div>
         <div class="hero-content">
-            <h1>Cordian Health Diary</h1>
+            <h1>Welcome to Sacred Heart College Clinic</h1>
             <p>Providing quality healthcare services to our students and staff</p>
             <button class="cta-button" onclick="openModal()">Submit your information here</button>
+            <button class="cta-button" onclick="openHealthRecordModal()">Submit health record</button>
         </div>
         <!-- scroll down text -->
         <div class="scroll-down">
@@ -115,6 +116,22 @@
             <div class="form-container">
                 <iframe 
                     src="https://docs.google.com/forms/d/e/1FAIpQLScfXqXo3v7Y1pWzizsAGVcjB0gdYFbFKSdiuQjuu1yvFDztvg/viewform?embedded=true" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0">
+                    Loading…
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Health Record Modal -->
+    <div id="healthRecordModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeHealthRecordModal()">&times;</span>
+            <div class="form-container">
+                <iframe 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSdtdIFVQNKsvIgM4Zr4PSvYOBJ-raKxeNFFNSeqxqhG8EhLYA/viewform?embedded=true" 
                     frameborder="0" 
                     marginheight="0" 
                     marginwidth="0">
