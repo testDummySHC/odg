@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacred Heart College Clinic</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Sacred Heart College, Lucena City</h1>
+            </div>
+            <img src="images/SHC-Logo.png" alt="Sacred Heart College Logo">
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-carousel-bg">
+            <div class="carousel-image" style="background-image: url('images/shc_new2.jpg');"></div>
+            <div class="carousel-image" style="background-image: url('images/shc_new4.jpg');"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Welcome to Sacred Heart College Clinic</h1>
+            <p>Providing quality healthcare services to our students and staff</p>
+            <button class="cta-button" onclick="openModal()">Submit your information here</button>
+        </div>
+        <!-- scroll down text -->
+        <div class="scroll-down">
+            <p>Scroll down to see our services</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-stethoscope"></i>
+                <h3>Medical Consultation</h3>
+                <p>Professional medical advice and consultation for students and staff.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-heartbeat"></i>
+                <h3>First Aid</h3>
+                <p>Immediate medical attention for emergencies and minor injuries.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-notes-medical"></i>
+                <h3>Health Records</h3>
+                <p>Maintenance of student health records and medical history.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule">
+        <h2>Clinic Hours</h2>
+        <div class="schedule-container">
+            <div class="schedule-card">
+                <h3>Regular Hours</h3>
+                <ul>
+                    <li>Monday - Friday: 7:30 AM - 4:30 PM</li>
+                    <li>Saturday: 8:00 AM - 12:00 PM</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+            </div>
+            <div class="schedule-card">
+                <h3>Emergency Contact</h3>
+                <p>For after-hours emergencies, please contact:</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Sacred Heart College Clinic</h4>
+                <p>Dedicated to providing quality healthcare services to our academic community.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sacred Heart College Clinic. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Appointment Modal -->
+    <div id="formModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <div class="form-container">
+                <iframe 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLScfXqXo3v7Y1pWzizsAGVcjB0gdYFbFKSdiuQjuu1yvFDztvg/viewform?embedded=true" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0">
+                    Loading…
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
